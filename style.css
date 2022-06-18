@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800;900&family=Ubuntu:wght@400;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.hero{
+    background-image: url('./socially_img/back-image.png');
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    padding: 10px 10%;
+    position: relative;
+}
+nav{
+    padding: 10px 0;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+}
+
+.login-btn{
+    text-decoration: none;
+    display: inline-block;
+    color: #333;
+    font-size: 18px;
+    margin-right: 15px;
+}
+.btn{
+    display: inline-block;
+    padding: 8px 40px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    background-image: linear-gradient(45deg, #df4881, #c430d7);
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    border-top-right-radius: 30px;
+}
+
+.content{
+    padding: 80px 0;
+    width: 600px;
+}
+
+.content h1{
+    font-size: 70px;
+    font-weight: 500;
+    color: #222;
+}
+.content p{
+    margin: 10px 0 30px;
+    animation-delay: 0.5s;
+}
+.content .btn{
+    padding: 10px 70px;
+    font-size: 16px;
+    animation-delay: 1s;
+}
+.futer-img{
+    width: 530px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+}
+.futer-img.anim{
+    animation-delay: 1.5s;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
